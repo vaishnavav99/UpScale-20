@@ -1086,11 +1086,11 @@ h1, h2, h3, h4, h5,
     text-align: center; } }
 
 .pricing-wrap {
-  padding-bottom: 20rem;
-  padding-top: 7rem; }
+  padding-bottom: 10rem;
+  padding-top: 5rem; }
   @media (max-width: 1199.98px) {
     .pricing-wrap {
-      padding-bottom: 7em; } }
+      padding-bottom: 5em; } }
   .pricing-wrap .section-desc {
     color: rgba(255, 255, 255, 0.7); }
 
