@@ -165,19 +165,20 @@
           <div class="col-lg-6 mb-5"><br>
             <h2 class="section-title">Schedule</h2>
           </div>
+         
         </div>
-        <div class="row">
-          <div class="col-lg-5 mr-auto mb-5">
-            <p class="mb-5">Spread over a span of 7 days, with each day tailored specifically for the participants to maximize their performance & aquire knowledge.</p>
+        <div class="row" style="text-align: center;">
+          <div class="col-lg-6  ">
+            <p class="process bg-white rounded">Spread over a span of 7 days, with each day tailored specifically for the participants to maximize their performance & aquire knowledge.</p>
           </div>
-          <div class="col-lg-5 mr-auto mb-5">
-           <h2 id="demo" class="process bg-white rounded"></h2>
-            
+          <div class="col-lg-6 ">
+           <p id="demo" class="process bg-white rounded"></p>            
           </div>
+          
         </div>
         <div class="row">
           <div class="col-lg-4 col-md-6">
-            <div class="process bg-white rounded">
+            <div class="process bg-white rounded" data-aos="fade-up">
               <div>
                 <img src="images/s1.jpg" alt="Image" class="img-fluid" style="width: 300px;height: 150px;">
                 <p> </p>
@@ -191,7 +192,7 @@
             </div>
           </div>
           <div class="col-lg-4 col-md-6">
-            <div class="process bg-white rounded">
+            <div class="process bg-white rounded" data-aos="fade-up">
               <div>
                 <img src="images/s2.jpg" alt="Image" class="img-fluid" style="width: 300px;height: 150px;">
                 <p></p>
@@ -204,7 +205,7 @@
             </div>
           </div>
           <div class="col-lg-4 col-md-6">
-            <div class="process bg-white rounded">
+            <div class="process bg-white rounded" data-aos="fade-up" data-aos="fade-up">
               <div>
                 <img src="images/s3.png" alt="Image" class="img-fluid" style="width: 300px;height: 150px;">
                 <p></p>
@@ -219,7 +220,7 @@
         
         
           <div class="col-lg-4 col-md-6">
-            <div class="process bg-white rounded">
+            <div class="process bg-white rounded" data-aos="fade-up" data-aos="fade-up">
               <div>
                 <img src="images/s4.jpg" alt="Image" class="img-fluid" style="width: 300px;height: 150px;">
                 <p> </p>
@@ -233,7 +234,7 @@
             </div>
           </div>
           <div class="col-lg-4 col-md-6">
-            <div class="process bg-white rounded">
+            <div class="process bg-white rounded" data-aos="fade-up" data-aos="fade-up">
               <div>
                 <img src="images/s5.jpg" alt="Image" class="img-fluid" style="width: 300px;height: 150px;">
                 <p></p>
@@ -246,7 +247,7 @@
             </div>
           </div>
           <div class="col-lg-4 col-md-6">
-            <div class="process bg-white rounded">
+            <div class="process bg-white rounded" data-aos="fade-up">
               <div>
                 <img src="images/s6.png" alt="Image" class="img-fluid" style="width: 300px;height: 150px;">
                 <p></p>
@@ -260,7 +261,7 @@
             </div>
           </div>
           <div class="col-md-6 col-lg-4 mb-4 mb-lg-0">
-            <div class="process bg-white rounded">
+            <div class="process bg-white rounded" data-aos="fade-up">
               <div>
                 <img src="images/s7.jpg" alt="Image" class="img-fluid" style="width: 300px;height: 150px;">
                 <p> </p>
@@ -403,24 +404,8 @@
   <script src="js/jquery.animateNumber.min.js"></script>
   <script src="js/jquery.sticky.js"></script>
   <script src="js/main.js"></script>
-  <script> 
-    var deadline = new Date("Sep 16, 2020 18:00:00").getTime(); 
-    var x = setInterval(function() { 
-    var now = new Date().getTime(); 
-    var t = deadline - now; 
-    var days = Math.floor(t / (1000 * 60 * 60 * 24)); 
-    var hours = Math.floor((t%(1000 * 60 * 60 * 24))/(1000 * 60 * 60)); 
-    var minutes = Math.floor((t % (1000 * 60 * 60)) / (1000 * 60)); 
-    var seconds = Math.floor((t % (1000 * 60)) / 1000);
-    
-    document.getElementById("demo").innerHTML = "starts in <br>"+ days + "d "  
-    + hours + "h " + minutes + "m " + seconds + "s "; 
-        if (t < 0) { 
-            clearInterval(x); 
-            document.getElementById("demo").innerHTML = "Event Ends on <br> 22 Sep  2020 "; 
-        } 
-    }, 1000); 
-    </script> 
+  <script src="js/count1.js"> </script>
+  <script src="js/count2.js"> </script> 
   
   </body>
 </html>
